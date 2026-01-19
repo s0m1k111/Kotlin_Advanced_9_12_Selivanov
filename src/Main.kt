@@ -10,6 +10,7 @@
     println("Копия минералов с бонусом: $bonus")
 }*/
 
+/*
 fun main() {
 
     val car = Car(model = "LADA", number = "134LAD")
@@ -46,4 +47,19 @@ fun main() {
 
     val player = MediaPlayer()
     player.play()
+}*/
+fun main() {
+    val manager = ResourceManager()
+
+    manager.add(OutpostResource(id = 1, name = "Minerals", amount = 120))
+    manager.add(OutpostResource(id = 2, name = "Gas", amount = 40))
+
+    val generator = EnergyGenerator()
+    val lab = ResearchLab()
+
+    generator.performAction(manager)
+    lab.performAction(manager)
+
+    println()
+    manager.printAll()
 }

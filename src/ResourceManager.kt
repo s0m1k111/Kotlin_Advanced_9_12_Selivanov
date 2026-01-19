@@ -1,6 +1,7 @@
 import javax.lang.model.element.Name
 import kotlin.io.path.createTempDirectory
 
+/*
 class ResourceManager {
     private val resources = mutableListOf<OutpostResource>()
 
@@ -15,4 +16,21 @@ class ResourceManager {
         println("Ресурсы базы")
         resources.forEach { println("${it.name}: ${it.amount}") }
     }
+}*/
+class ResourceManager {
+    private val resources = mutableListOf<OutpostResource>()
+
+    fun add(resource: OutpostResource) {
+        resources.add(resource)
+    }
+
+    fun get(name: String): OutpostResource? {
+        return resources.find { it.name == name }
+    }
+
+    fun printAll() {
+        println("Все ресурсы:")
+        resources.forEach { println("- ${it.name}: ${it.amount}") }
+    }
 }
+
