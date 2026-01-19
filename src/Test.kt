@@ -1,3 +1,4 @@
+/*
 import kotlin.io.path.fileVisitor
 
 abstract class Human(val name: String){
@@ -6,9 +7,11 @@ abstract class Human(val name: String){
 
     abstract fun hello()
 
-    /*fun hello(){
+    */
+/*fun hello(){
         println("My name is $name")
-    }*/
+    }*//*
+
 }
 
 class Person(name: String, override var age: Int): Human(name) {
@@ -40,18 +43,22 @@ class Rectangle(val width: Float, val height: Float) : Figure() {
     }
 }
 
+*/
 /*var age: Int = 18
     set(value){
         if((value > 0) and (value < 110))
             field = value
-    }*/
+    }*//*
+
 
 fun main() {
-    /*println(age)
+    */
+/*println(age)
     age = 45
     println(age)
     age = -345
-    println(age)*/
+    println(age)*//*
+
 
     val sword = Item(1,"Sword",1)
     val betterSword = sword.copy(quantity = 2)
@@ -65,4 +72,4 @@ fun main() {
     val pavel: Human = Person("Pavel")
     denis.hello()
     pavel.hello()
-}
+}*/
