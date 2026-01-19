@@ -1,7 +1,12 @@
-/*fun main(){
-    val manager = ResourceManager()
-    val minerals = OutpostResource(1,"Minerals", 300)
-    val gas = OutpostResource(2,"Gas",100)
+import modules.EnergyGenerator
+import modules.ResearchLab
+import resources.OutpostResource
+import resources.ResourceManager
+
+/*fun characters.characters.resources.main(){
+    val manager = resources.ResourceManager()
+    val minerals = resources.OutpostResource(1,"Minerals", 300)
+    val gas = resources.OutpostResource(2,"Gas",100)
     manager.add(minerals)
     manager.add(gas)
     manager.printAll()
@@ -11,10 +16,10 @@
 }*/
 
 /*
-fun main() {
+fun characters.characters.resources.main() {
 
-    val car = Car(model = "LADA", number = "134LAD")
-    val aircraft = Aircraft(model = "Boeing", number = "737")
+    val car = examle.Car(model = "LADA", number = "134LAD")
+    val aircraft = examle.Aircraft(model = "Boeing", number = "737")
 
 
     car.move()
@@ -24,14 +29,14 @@ fun main() {
 
     println()
 
-    travel(car)
-    travel(aircraft)
+    examle.travel(car)
+    examle.travel(aircraft)
 
     println()
 
 
-    val movableCar: Movable = Car(model = "Toyota", number = "123ABC")
-    val movableAircraft: Movable = Aircraft(model = "Airbus", number = "A320")
+    val movableCar: examle.Movable = examle.Car(model = "Toyota", number = "123ABC")
+    val movableAircraft: examle.Movable = examle.Aircraft(model = "Airbus", number = "A320")
 
     movableCar.move()
     movableAircraft.move()
@@ -39,13 +44,13 @@ fun main() {
     println()
 
 
-    val pavel = WorkingStudent(name = "Pavel")
+    val pavel = examle.WorkingStudent(name = "Pavel")
     pavel.work()
     pavel.study()
 
     println()
 
-    val player = MediaPlayer()
+    val player = examle.MediaPlayer()
     player.play()
 }*/
 fun main() {

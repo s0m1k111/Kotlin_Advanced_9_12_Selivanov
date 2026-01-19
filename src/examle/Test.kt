@@ -1,4 +1,4 @@
-/*
+package examle/*
 import kotlin.io.path.fileVisitor
 
 abstract class Human(val name: String){
@@ -51,7 +51,7 @@ class Rectangle(val width: Float, val height: Float) : Figure() {
     }*//*
 
 
-fun main() {
+fun characters.characters.resources.main() {
     */
 /*println(age)
     age = 45
