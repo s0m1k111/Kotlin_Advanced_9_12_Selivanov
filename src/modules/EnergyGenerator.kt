@@ -4,7 +4,7 @@ package modules
 import resources.OutpostResource
 import resources.ResourceManager
 abstract class EnergyGenerator : OutpostModule(name = "Генератор энергии") {
-    fun performAction(manager: ResourceManager) {
+    override fun performAction(manager: ResourceManager) {
         println("Генератор работает... Производит 20 энергии")
         val energy = manager.get("Energy")
 

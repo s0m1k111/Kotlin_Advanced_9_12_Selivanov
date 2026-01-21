@@ -1,5 +1,5 @@
 import modules.EnergyGenerator
-import modules.ResearchLab
+/*import modules.ResearchLab*/
 import resources.OutpostResource
 import resources.ResourceManager
 
@@ -53,6 +53,8 @@ fun characters.characters.resources.main() {
     val player = examle.MediaPlayer()
     player.play()
 }*/
+
+/*
 fun main() {
     val manager = ResourceManager()
 
@@ -68,3 +70,5 @@ fun main() {
     println()
     manager.printAll()
 }
+*/
+
