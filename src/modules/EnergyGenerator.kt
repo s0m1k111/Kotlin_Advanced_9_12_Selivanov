@@ -3,15 +3,23 @@ package modules
 
 import resources.OutpostResource
 import resources.ResourceManager
-abstract class EnergyGenerator : OutpostModule(name = "Генератор энергии") {
-    override fun performAction(manager: ResourceManager) {
+class EnergyGenerator : OutpostModule(name = "Генератор энергии") {
+    override fun performAction(manager: ResourceManager): ModuleResult {
         println("Генератор работает... Производит 20 энергии")
         val energy = manager.get("Energy")
-
-        if (energy != null) {
+        return if (energy != null) {
             energy.amount += 20
+            ModuleResult.ResourceProduced("Energy", 20)
         } else {
-            manager.add(OutpostResource(id = 99, name = "Energy", amount = 20))
+            manager.add(OutpostResource(99, "Energy", 20))
+            ModuleResult.Success("Энергия создана впервые")
         }
     }
 }
+//        if (energy != null) {
+//            energy.amount += 20
+//        } else {
+//            manager.add(OutpostResource(id = 99, name = "Energy", amount = 20))
+//        }
+//    }
+//}

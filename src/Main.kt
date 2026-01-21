@@ -1,5 +1,5 @@
 import modules.EnergyGenerator
-/*import modules.ResearchLab*/
+import modules.ResearchLab
 import resources.OutpostResource
 import resources.ResourceManager
 
@@ -54,7 +54,7 @@ fun characters.characters.resources.main() {
     player.play()
 }*/
 
-/*
+
 fun main() {
     val manager = ResourceManager()
 
@@ -69,6 +69,22 @@ fun main() {
 
     println()
     manager.printAll()
+
+
+    fun handleModuleResult() {
+
+        println("\n Запуск модулей ")
+
+        val generatorResult = generator.performAction(manager)
+        val labResult = lab.performAction(manager)
+
+
+        handleModuleResult(generatorResult)
+        handleModuleResult(labResult)
+
+
+        println("\nРесурсы базы:")
+        manager.printAll()
+    }
 }
-*/
 
